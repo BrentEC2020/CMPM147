@@ -46,7 +46,7 @@ function main() {
   
   
   
-  Your victory is short-lived as you have immediately run into the infamous $villain just as you hit open water. You yell at your crew to prepare for battle and you announce "$one_liner"
+  Your victory is short-lived as you have immediately run into the infamous $villain just as you hit open water. You yell at your crew to prepare for battle and you announce, "$one_liner"
   `;
   
   
