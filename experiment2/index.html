@@ -36,7 +36,11 @@
 
 			<div class="minor-section">
 				<div id="canvas-container">
-					<!-- canvas will be added here -->
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.min.js" integrity="sha512-b/htz6gIyFi3dwSoZ0Uv3cuv3Ony7EeKkacgrcVg8CMzu90n777qveu0PBcbZUA7TzyENGtU+qZRuFAkfqgyoQ==" crossorigin="anonymous"></script>
+   					 <script src="/sketch.js" defer></script>
+  					<body>
+    					<script src="https://button.glitch.me/button.js" defer></script>
+  					</body>
 				</div>
                 <div class="fullscreen-box">
                     <button id="reimagine">Reimagine</button>
@@ -48,9 +52,9 @@
 
                 <div class="minor-section">
                     <h2>Description</h2>
-                    <p>This project offers a generative, living impression of this inspiring image:</p>
+                    <p>This program generates a living impression of a low-poly sunset using p5.js. The image makes use of gradients to imitate the color fades of the image and custom shapes to form mountains and rocks.</p>
                     <div class="image-wrapper">
-                        <img src="img/a-pleasant-valley.webp">
+                        <img src="img/lowpolysunset.jpeg">
                     </div>
                 </div>
 
@@ -58,20 +62,26 @@
                     <h2>Technical</h2>
                     <p>Relation to inspring image:</p>
                     <ul>
-                        <li>Color: The sky, grass, tree, and stone colors were sampled from the inspiring image using the Photoshop eyedropper tool.</li>
-                        <li>Primitives: The trees are rendered with triangle primitives.</li>
-                        <li>Polygons: The background mountain is a single randomly polygon using vertex calls.</li>
-                        <li>Composition: Different random seed values lead to differently shaped mountains and differently positioned trees.</li>
-                        <li>Life: The position of trees is animated over time as if to simulate the view from a passing train and the slightly responds to the horizontal motion of the mouse cursor.</li>
+                        <li>Color: The sky, ground, sun, mountain, rocks, and star colors were sampled from the inspiring image using an online eyedropper tool.</li>
+                        <li>Primitives: The stones are rendered with quad primitives.</li>
+                        <li>Polygons: The mountains are created using three different custom polygons using vertex calls.</li>
+                        <li>Composition: Different random seed values generate different mountain polygons, varied positioned rocks, and the number and movement of the stars.</li>
+                        <li>Life: The rocks respond to the movement of the user's mouse cursor to replicate the experience of walking by the scene.</li>
                     </ul>
-                    <p>Borrowed from UCSC Prof Adam M. Smith</p>
+                    <p>Citations and Links Were Helpful to this Project</p>
+					<ul>
+						<li><a href="https://p5js.org/reference/#/p5/noise" target="_blank">Noise in p5.js</a></li>
+						<li><a href="https://p5js.org/examples/color-linear-gradient.html" target="_blank">Gradients in p5.js</a></li>
+						<li><a href="https://glitch.com/edit/#!/cmpm147-ex2-living-impression?path=script.js%3A1%3A0" target="_blank">Professor Modes Original Glitch Project</a></li>
+
+					</ul>
                 </div>
 
             </div>
 
 			<div class="minor-section">
 				<h2>Reflection</h2>
-				<p>As I'm going through the experimentation process for Experiment 2, I'm feeling simultaneously excited and stressed. Excited because the course material is coming together, everything is taking shape, and I can see how cool it's going to be. But also stressed because there are still a million little technical problems to solve and not enough time to solve them all. It's crunch time with the deadline of next week's start of classes looming large on the horizon. Hopefully it will all come together in time!</p>
+				<p>I once again had a little trouble porting over the code from Glitch to the static HTML page, but I had more confidence trying to figure it out this time around. I had a lot of fun reading through the p5.js library to learn new skills to help improve my project. I also reconfigured the mountain and tree code we were shown to fit into my project. I had a really good time being able to learn and understand p5.js a lot more than when I started. I was unable to figure out how to integrate the fullscreen function into my project. I hope I can return to this later and solve that puzzle.</p>
 			</div>
 
 		</section>
